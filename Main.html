@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JTS Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    .navbar-brand {
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .hero-section {
+      background: linear-gradient(135deg, #6C63FF, #4E9AF1);
+      color: white;
+      padding: 80px 0;
+      border-radius: 0 0 80px 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-section h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    .hero-section h1 .highlight {
+      color: #d1c4ff;
+    }
+
+    .hero-section p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+
+    .btn-outline-light {
+      border: 2px solid #d1c4ff;
+      color: #fff;
+    }
+
+    .btn-outline-light:hover {
+      background-color: #d1c4ff;
+      color: #333;
+    }
+
+    .btn-gradient {
+      background: linear-gradient(to right, #c084fc, #7c3aed);
+      color: #fff;
+      border: none;
+    }
+
+    .btn-gradient:hover {
+      opacity: 0.9;
+    }
+
+    .social-icons {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+    }
+
+    .social-icons a {
+      margin-left: 10px;
+      color: white;
+      font-size: 1.2rem;
+    }
+
+    .ai-chat-box {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 300px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    z-index: 9999;
+    font-family: sans-serif;
+    }
+
+    .ai-chat-header {
+    background: #6f42c1;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+    }
+
+    .ai-close {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    cursor: pointer;
+    }
+
+    .ai-chat-body {
+    max-height: 250px;
+    overflow-y: auto;
+    padding: 10px;
+    font-size: 14px;
+    }
+
+    .ai-chat-footer {
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    }
+
+    .ai-message {
+    margin-bottom: 10px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    max-width: 90%;
+    }
+
+    .ai-bot {
+    background-color: #f1f1f1;
+    align-self: flex-start;
+    }
+
+    .ai-user {
+    background-color: #d1e7dd;
+    align-self: flex-end;
+    margin-left: auto;
+    }
+
+    .logo-gradient {
+    background: linear-gradient(to right, #c084fc, #7c3aed);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    }
+   
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-light py-3">
+    <div class="container">
+      <a class="navbar-brand logo-gradient" href="#">JTS</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#hire-me">Hire Me!</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section text-center">
+    <div class="container">
+      <h1>A <span class="highlight">dedicated and detail-oriented professional</span> <br> with hands-on experience in software development.</h1>
+      <p>Eager to contribute technical expertise, grow in a collaborative environment, and take on greater responsibilities that
+         support both personal and organizational success.</p>
+      <div class="mt-4">
+        <a href="#projects" class="btn btn-outline-light me-3">SEE WORKS</a>
+        <a href="#hire-me" class="btn btn-gradient">HIRE ME!</a>
+      </div>
+    </div>
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/juliannetheresesantiago/"><i class="bi bi-linkedin"></i></a>
+      <a href="mailto:santiagochina30@gmail.com"><i class="bi bi-envelope"></i></a>
+      <a href="#"><i class="bi bi-facebook"></i></a>
+    </div>
+  </section>
+
+
+  <!-- About Me Section -->
+<section id ="about" class="about-me py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="mb-4 fw-bold">About Me</h2>
+    <p class="lead mb-4">
+      Hi! I’m <strong>Julianne Therese G. Santiago</strong>, a passionate software developer with experience in creating engaging and scalable applications and custom applications. I enjoy solving problems and building products that deliver real value to users.
+    </p>
+    <p>
+      My technical stack includes VB6, VB.NET, C# windows forms and MVC patterns, SQL, API Integrations, AWS S3 Chilkat Components
+      and front-end technologies like HTML5, CSS3, Bootstrap, and JavaScript. I’ve contributed to several successful projects such 
+      as POS systems, customer loyalty platforms, reporting systems and plugin integrations.
+    </p>
+  </div>
+</section>
+
+
+
+<!-- Tech Stack Section -->
+<section class="tech-stack py-5">
+  <div class="container text-center">
+    <h2 class="mb-4 fw-bold">My Tech Stack</h2>
+    <p class="mb-5 text-muted">Technologies I use to build and maintain software</p>
+    <div class="row justify-content-center gy-4">
+      <div class="col-4 col-md-2">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" 
+             alt="HTML5" class="img-fluid tech-icon" title="HTML5">
+      </div>
+      <div class="col-4 col-md-2">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" 
+             alt="CSS3" class="img-fluid tech-icon" title="CSS3">
+      </div>
+      <div class="col-4 col-md-2">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" 
+             alt="Bootstrap" class="img-fluid tech-icon" title="Bootstrap">
+      </div>
+      <div class="col-4 col-md-2">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" 
+             alt="C#" class="img-fluid tech-icon" title="C#">
+      </div>
+      <div class="col-4 col-md-2">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" 
+            alt="VB.NET / Visual Studio" class="img-fluid tech-icon" title="VB.NET (via Visual Studio)">
+      </div>
+      <div class="col-4 col-md-2">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" 
+             alt="SQL Server" class="img-fluid tech-icon" title="SQL Server">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="projects py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="mb-4 fw-bold">Projects I've Handled</h2>
+    <p class="mb-5 text-muted">Here are some of the notable projects I've worked on</p>
+
+    <div class="row g-4">
+
+      <!-- Project 1 -->
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                <h5 class="card-title fw-bold">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" 
+                        alt="POS Icon" width="30" class="me-2">
+                    POS System
+                </h5>
+                <div class="mb-3">
+                </div>
+                <p class="card-text">
+                    A Point of Sale system to manage transactions, inventory, and reporting for retail stores.
+                    <br><br>
+                    <i>Technologies used: VB6, SQL, Crystal Report, Chilkat Components, REST API</i>
+                </p>
+                </div>
+            </div>
+        </div>
+
+
+      <!-- Project 2 -->
+      <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                <h5 class="card-title fw-bold">
+                <img src="https://cdn-icons-png.flaticon.com/512/1946/1946429.png" 
+                    alt="Customer Icon" width="30" class="me-2">
+                Customer Loyalty Program
+                </h5>
+                <div class="mb-3">
+                </div>
+                <p class="card-text">
+                    A Customer Loyalty Program system is used to manage customer's membership and Points Earning in every transaction in a retail stores. 
+                    <br><br>
+                    <i>Technologies used: C# .NET, SQL, Crystal Report, Chilkat Components, REST API</i>
+                </p>
+                </div>
+            </div>
+        </div>
+
+      <!-- Project 3 -->
+      <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                <h5 class="card-title fw-bold">
+                <img src="https://cdn-icons-png.flaticon.com/512/126/126472.png" 
+                    alt="Tool Icon" width="30" class="me-2">
+                Integration Agents or Background Tools
+                </h5>
+                <div class="mb-3">
+                </div>
+                <p class="card-text">
+                    An Integration Agents or Background Tools is used to transfer files, updates from one system to another via network or internet (IIS) to deliver updates from the 
+                    Head Offices to Branch Stores to POS Terminals.
+                    <br><br>
+                    <i>Technologies used: VB6, SQL, IIS network, Access DB</i>
+                </p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Project 4 -->
+      <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                <h5 class="card-title fw-bold">
+                <img src="https://cdn-icons-png.flaticon.com/512/483/483356.png" 
+                    alt="Tool Icon" width="30" class="me-2">
+                Manufacturing Resource Planning System
+                </h5>
+                <div class="mb-3">
+                </div>
+                <p class="card-text">
+                    A Manufacturing Resource Planning System manages
+                    factories resource used in their daily, weekly, and monthly operations, to track used in-house equipments and resource. MRP System used to identify and calculate
+                    Purchase Order, and Critical Product.
+                    <br><br>
+                    <i>Technologies used: C# MVC pattern, SQL (stored procedures), HTML5, CSS, BOOTSTRAP4</i>
+                </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 5 -->
+      <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                <h5 class="card-title fw-bold">
+                <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" 
+                    alt="Building Icon" width="30" class="me-2">
+                Payroll System
+                </h5>
+                <div class="mb-3">
+                </div>
+                <p class="card-text">
+                    A Payroll System manages
+                    employees attendance, time-entries, and to compute employee's salary.
+                    <br><br>
+                    <i>Technologies used: C# MVC pattern, SQL (stored procedures), HTML5, CSS, BOOTSTRAP4</i>
+                </p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Project 6 -->
+      <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                <h5 class="card-title fw-bold">
+                <img src="https://cdn-icons-png.flaticon.com/512/58/58645.png" 
+                    alt="Tool Icon" width="30" class="me-2">
+                Price Management System
+                </h5>
+                <div class="mb-3">
+                </div>
+                <p class="card-text">
+                    A Price Management System manages and track
+                    company's purchased to its suppliers.
+                    <br><br>
+                    <i>Technologies used: C# MVC pattern, SQL (stored procedures), HTML5, CSS, BOOTSTRAP4</i>
+                </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Hire Me Section -->
+<section id="hire-me" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-4">Why Hire Me?</h2>
+    <div class="row align-items-center">
+
+      <!-- Left Side: Text -->
+      <div class="col-md-8">
+        <!-- Career Objective -->
+        <div class="mb-4">
+          <h5 class="fw-bold">🎯 Career Objective</h5>
+          <p>
+            A dedicated and detail-oriented professional with hands-on experience in software development, seeking a mid-level role within a reputable organization.
+            Eager to contribute technical expertise, grow in a collaborative environment, and take on greater responsibilities that support both personal and organizational success.
+          </p>
+        </div>
+
+         <div class="mb-4">
+          <h5 class="fw-bold">ℹ️ More details about me</h5>
+          <p>
+            I am 25 years old, currently living in Quezon City. I graduated a Bachelors Degree in Information Technology from Quezon City University year 2018-2022.
+          </p>
+        </div>
+
+        <!-- Experience Summary -->
+        <div class="mb-4">
+          <h5 class="fw-bold">💼 Professional Experience</h5>
+          <p><strong>iRipple, Inc (February 2024 - July 2025):</strong> Delivered and enhanced enterprise-level software solutions such as POS, merchandise management, and customer loyalty systems using C#, VB6, SQL, RESTful APIs, and AWS Chilkat. Managed multiple projects, collaborated with QA and cross-functional teams, interpreted FSDs, and supported on-site deployments — all while practicing Agile methodologies and using GitLab for version control.</p>
+
+          <p><strong>Seiko IT Solutions PH (January 2023 - February 2024):</strong> Led the development of scalable web applications using C# (MVC), MySQL, and SQL Server. As Lead Software Engineer, handled Price Management, Payroll, Engineering, and MRP systems. Oversaw client requirements, documentation, and deployments. Used SVN for version control and managed both frontend/backend tasks in multiple projects.</p>
+        </div>
+
+         <div class="mb-4">
+          <h5 class="fw-bold">What is your edge?</h5>
+          <p>
+            I have a solid foundation in programming and a proven track record of consistently delivering quality results. 
+            I’ve successfully led and deployed multiple end-to-end projects — from development to production — tailored to meet client needs. 
+            My edge lies in my technical expertise, strategic problem-solving, and eagerness to continuously learn and adapt to new technologies, 
+            which allows me to work efficiently and proactively in fast-paced environments.
+          </p>
+        </div>
+    </div>
+
+        <!-- AI Thoughts -->
+        <!-- <div>
+          <h5 class="fw-bold">🤖 My Thoughts on AI Development</h5>
+          <p>
+            AI has been a game-changer in my growth as a developer. It helps improve problem-solving, optimize code quality, and adapt to fast-paced development environments. With AI, I’ve been able to upskill rapidly, take on more responsibilities, and focus on writing clean, maintainable, and efficient code while reducing repetitive tasks.
+          </p>
+        </div>
+      </div> -->
+
+      <!-- Right Side: Photo -->
+      <div class="col-md-4 text-center">
+        <img src="GRADPIC.jpg" alt="Julianne Santiago" class="img-fluid rounded shadow" style="max-height: 550px;">
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="https://drive.google.com/file/d/18g23faTOXskabFJDzTJc2Vb3IZr9wjUw/view?usp=sharing" 
+            class="btn btn-outline-primary btn-lg" 
+            target="_blank" 
+            rel="noopener noreferrer">
+            📄 Download My CV
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Chat Toggle Button -->
+<button class="btn btn-primary" onclick="toggleAIChat()">💬 Chat with AI</button>
+
+<!-- Chat Container -->
+<div id="ai-chat" class="ai-chat-box" style="display:none;">
+  <div class="ai-chat-header">
+    🤖 JTS's Mini Chat Bot
+    <span class="ai-close" onclick="toggleAIChat()">×</span>
+  </div>
+  <div class="ai-chat-body" id="chat-body">
+    <div class="ai-message ai-bot">Hi I am JTS's Mini Chat Bot! Ask me about my tech stack, projects, or contact info.</div>
+  </div>
+  <div class="ai-chat-footer">
+    <input type="text" id="user-input" class="form-control" placeholder="Type a message..." onkeypress="handleEnter(event)">
+    <button class="btn btn-success mt-2" onclick="sendMessage()">Send</button>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="text-white pt-4 pb-2" style="background: linear-gradient(135deg, #6C63FF, #4E9AF1);">
+  <div class="container text-center">
+    <h5 class="mb-3">Let's Connect!</h5>
+
+    <div class="mb-3">
+      <a href="https://www.linkedin.com/in/juliannetheresesantiago/" class="text-white me-3" target="_blank"><i class="bi bi-linkedin" style="font-size: 1.5rem;"></i></a>
+      <a href="mailto:santiagochina30@gmail.com" class="text-white me-3"><i class="bi bi-envelope" style="font-size: 1.5rem;"></i></a>
+      <a href="#" class="text-white me-3"><i class="bi bi-facebook" style="font-size: 1.5rem;"></i></a>
+    </div>
+
+    <p class="mb-0">&copy; 2025 Julianne Therese G. Santiago | All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script>
+function toggleAIChat() {
+  const chat = document.getElementById("ai-chat");
+  chat.style.display = chat.style.display === "none" ? "block" : "none";
+}
+
+function handleEnter(event) {
+  if (event.key === "Enter") {
+    sendMessage();
+  }
+}
+
+function sendMessage() {
+  const input = document.getElementById("user-input");
+  const message = input.value.trim();
+  if (message === "") return;
+
+  const chatBody = document.getElementById("chat-body");
+
+  // Show user message
+  const userMsg = document.createElement("div");
+  userMsg.className = "ai-message ai-user";
+  userMsg.innerText = message;
+  chatBody.appendChild(userMsg);
+
+  // Get bot response
+  const botResponse = getBotReply(message.toLowerCase());
+  const botMsg = document.createElement("div");
+  botMsg.className = "ai-message ai-bot";
+  botMsg.innerText = botResponse;
+  chatBody.appendChild(botMsg);
+
+  input.value = "";
+  chatBody.scrollTop = chatBody.scrollHeight;
+}
+
+function getBotReply(msg) {
+  if (msg.includes("tech") || msg.includes("about") || msg.includes("stack"))  {
+    return "I'm skilled in VB.NET, C#, SQL Server, HTML5, CSS3, and Bootstrap.";
+  } else if (msg.includes("project")) {
+    return "I’ve handled POS systems, loyalty programs, and reporting/integration tools.";
+  } else if (msg.includes("contact") || msg.includes("email")) {
+    return "You can reach me at: santiagochina30@gmail.com or LinkedIn: https://www.linkedin.com/in/juliannetheresesantiago/";
+  } else if (msg.includes("hello") || msg.includes("hi")) {
+    return "Hello! How can I help you today?";
+  } else {
+    return "I'm not sure how to respond to that yet, but I'm still learning!";
+  }
+}
+</script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Bootstrap Icons (optional for social icons) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</body>
+</html>
