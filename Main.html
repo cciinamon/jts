@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +20,7 @@
     }
 
     .hero-section {
-      background: linear-gradient(135deg, #6C63FF, #4E9AF1);
+      background: linear-gradient(135deg, #b33939, #fa8072);
       color: white;
       padding: 80px 0;
       border-radius: 0 0 80px 0;
@@ -33,7 +34,7 @@
     }
 
     .hero-section h1 .highlight {
-      color: #d1c4ff;
+      color: #ffd5d5;
     }
 
     .hero-section p {
@@ -42,17 +43,17 @@
     }
 
     .btn-outline-light {
-      border: 2px solid #d1c4ff;
+      border: 2px solid #ffd5d5;
       color: #fff;
     }
 
     .btn-outline-light:hover {
-      background-color: #d1c4ff;
+      background-color: #ffd5d5;
       color: #333;
     }
 
     .btn-gradient {
-      background: linear-gradient(to right, #c084fc, #7c3aed);
+      background: linear-gradient(to right, #b33939, #fa8072);
       color: #fff;
       border: none;
     }
@@ -73,73 +74,65 @@
       font-size: 1.2rem;
     }
 
-    .ai-chat-box {
-    position: fixed;
-    bottom: 90px;
-    right: 20px;
-    width: 300px;
-    background: #fff;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    z-index: 9999;
-    font-family: sans-serif;
-    }
-
     .ai-chat-header {
-    background: #6f42c1;
-    color: white;
-    padding: 10px;
-    font-weight: bold;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    position: relative;
-    }
-
-    .ai-close {
-    position: absolute;
-    top: 10px;
-    right: 12px;
-    cursor: pointer;
-    }
-
-    .ai-chat-body {
-    max-height: 250px;
-    overflow-y: auto;
-    padding: 10px;
-    font-size: 14px;
-    }
-
-    .ai-chat-footer {
-    padding: 10px;
-    border-top: 1px solid #ccc;
-    }
-
-    .ai-message {
-    margin-bottom: 10px;
-    padding: 8px 10px;
-    border-radius: 8px;
-    max-width: 90%;
-    }
-
-    .ai-bot {
-    background-color: #f1f1f1;
-    align-self: flex-start;
-    }
-
-    .ai-user {
-    background-color: #d1e7dd;
-    align-self: flex-end;
-    margin-left: auto;
+      background: #b33939;
+      color: white;
+      padding: 10px;
+      font-weight: bold;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      position: relative;
     }
 
     .logo-gradient {
-    background: linear-gradient(to right, #c084fc, #7c3aed);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
+      background: linear-gradient(to right, #b33939, #fa8072);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: bold;
     }
-   
+
+    .tech-scroll-wrapper {
+      overflow: hidden;
+      position: relative;
+      height: 180px;
+      background: #fff0f0;
+      display: flex;
+      align-items: center;
+      border-radius: 10px;
+      padding: 10px 0;
+    }
+
+    .tech-scroll-content {
+      display: flex;
+      gap: 60px;
+      animation: scroll-left 25s linear infinite;
+    }
+
+    .tech-scroll-content img {
+      height: 150px;
+      width: auto;
+      transition: transform 0.3s ease;
+    }
+
+    .tech-scroll-content img:hover {
+      transform: scale(1.15);
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    footer {
+      background: linear-gradient(135deg, #b33939, #fa8072);
+    }
+  </style>
+</head>
+<body>
 
   </style>
 </head>
@@ -175,7 +168,7 @@
     <div class="social-icons">
       <a href="https://www.linkedin.com/in/juliannetheresesantiago/"><i class="bi bi-linkedin"></i></a>
       <a href="mailto:santiagochina30@gmail.com"><i class="bi bi-envelope"></i></a>
-      <a href="#"><i class="bi bi-facebook"></i></a>
+      <a href="https://github.com/ccinamon"><i class="bi bi-github"></i></a>
     </div>
   </section>
 
@@ -184,10 +177,10 @@
 <section id ="about" class="about-me py-5 bg-light">
   <div class="container text-center">
     <h2 class="mb-4 fw-bold">About Me</h2>
-    <p class="lead mb-4">
+    <p class="lead mb-6">
       Hi! I’m <strong>Julianne Therese G. Santiago</strong>, a passionate software developer with experience in creating engaging and scalable applications and custom applications. I enjoy solving problems and building products that deliver real value to users.
     </p>
-    <p>
+    <p class="lead mb-6">
       My technical stack includes VB6, VB.NET, C# windows forms and MVC patterns, SQL, API Integrations, AWS S3 Chilkat Components
       and front-end technologies like HTML5, CSS3, Bootstrap, and JavaScript. I’ve contributed to several successful projects such 
       as POS systems, customer loyalty platforms, reporting systems and plugin integrations.
@@ -198,38 +191,42 @@
 
 
 <!-- Tech Stack Section -->
-<section class="tech-stack py-5">
+<section class="tech-stack py-5" style="background-color: #f0f4ff;">
   <div class="container text-center">
     <h2 class="mb-4 fw-bold">My Tech Stack</h2>
     <p class="mb-5 text-muted">Technologies I use to build and maintain software</p>
-    <div class="row justify-content-center gy-4">
-      <div class="col-4 col-md-2">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" 
-             alt="HTML5" class="img-fluid tech-icon" title="HTML5">
-      </div>
-      <div class="col-4 col-md-2">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" 
-             alt="CSS3" class="img-fluid tech-icon" title="CSS3">
-      </div>
-      <div class="col-4 col-md-2">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" 
-             alt="Bootstrap" class="img-fluid tech-icon" title="Bootstrap">
-      </div>
-      <div class="col-4 col-md-2">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" 
-             alt="C#" class="img-fluid tech-icon" title="C#">
-      </div>
-      <div class="col-4 col-md-2">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" 
-            alt="VB.NET / Visual Studio" class="img-fluid tech-icon" title="VB.NET (via Visual Studio)">
-      </div>
-      <div class="col-4 col-md-2">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" 
-             alt="SQL Server" class="img-fluid tech-icon" title="SQL Server">
+
+    <div class="tech-scroll-wrapper">
+      <div class="tech-scroll-content">
+     
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman" title="Postman" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" title="Git" />
+        <img src="https://cdn-icons-png.flaticon.com/512/136/136525.png" alt="JSON" title="JSON">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" title="HTML5" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" title="CSS3" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" title="Bootstrap" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" title="C#" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" alt="VB.NET" title="VB.NET / Visual Studio" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" alt="SQL Server" title="SQL Server" />
+
+        <!-- Repeat for infinite loop illusion -->
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman" title="Postman" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" title="Git" />
+        <img src="https://cdn-icons-png.flaticon.com/512/136/136525.png" alt="JSON" title="JSON">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" title="HTML5" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" title="CSS3" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" title="Bootstrap" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" title="C#" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" alt="VB.NET" title="VB.NET / Visual Studio" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" alt="SQL Server" title="SQL Server" />
       </div>
     </div>
   </div>
 </section>
+
+
 
 <!-- Projects Section -->
 <section id="projects" class="projects py-5 bg-light">
@@ -251,7 +248,7 @@
                 <div class="mb-3">
                 </div>
                 <p class="card-text">
-                    A Point of Sale system to manage transactions, inventory, and reporting for retail stores.
+                    A Point of Sale system used to manage transactions, inventory, and reporting for retail stores.
                     <br><br>
                     <i>Technologies used: VB6, SQL, Crystal Report, Chilkat Components, REST API</i>
                 </p>
@@ -295,7 +292,7 @@
                     An Integration Agents or Background Tools is used to transfer files, updates from one system to another via network or internet (IIS) to deliver updates from the 
                     Head Offices to Branch Stores to POS Terminals.
                     <br><br>
-                    <i>Technologies used: VB6, SQL, IIS network, Access DB</i>
+                    <i>Technologies used: VB6, SQL, IIS network, Access DB, ETL (Extract, Load, Transform)</i>
                 </p>
                 </div>
             </div>
@@ -318,7 +315,7 @@
                     factories resource used in their daily, weekly, and monthly operations, to track used in-house equipments and resource. MRP System used to identify and calculate
                     Purchase Order, and Critical Product.
                     <br><br>
-                    <i>Technologies used: C# MVC pattern, SQL (stored procedures), HTML5, CSS, BOOTSTRAP4</i>
+                    <i>Technologies used: C# MVC pattern, SQL (stored procedures), HTML5, CSS, BOOTSTRAP4, Javascript</i>
                 </p>
                 </div>
             </div>
@@ -339,7 +336,7 @@
                     A Payroll System manages
                     employees attendance, time-entries, and to compute employee's salary.
                     <br><br>
-                    <i>Technologies used: C# MVC pattern, SQL (stored procedures), HTML5, CSS, BOOTSTRAP4</i>
+                    <i>Technologies used: C# MVC pattern, SQL (stored procedures), HTML5, CSS, BOOTSTRAP4, Javascript</i>
                 </p>
                 </div>
             </div>
@@ -361,7 +358,7 @@
                     A Price Management System manages and track
                     company's purchased to its suppliers.
                     <br><br>
-                    <i>Technologies used: C# MVC pattern, SQL (stored procedures), HTML5, CSS, BOOTSTRAP4</i>
+                    <i>Technologies used: C# MVC pattern, SQL (stored procedures), HTML5, CSS, BOOTSTRAP4, Javascript</i>
                 </p>
                 </div>
             </div>
@@ -374,102 +371,53 @@
 
 
 <!-- Hire Me Section -->
-<section id="hire-me" class="py-5 bg-light">
+<section id="hire-me" class="py-5" style="background: linear-gradient(to bottom right, #f0f4ff, #ede9fe); border-radius: 30px;">
   <div class="container">
-    <h2 class="text-center fw-bold mb-4">Why Hire Me?</h2>
-    <div class="row align-items-center">
-
-      <!-- Left Side: Text -->
-      <div class="col-md-8">
-        <!-- Career Objective -->
-        <div class="mb-4">
-          <h5 class="fw-bold">🎯 Career Objective</h5>
-          <p>
-            A dedicated and detail-oriented professional with hands-on experience in software development, seeking a mid-level role within a reputable organization.
-            Eager to contribute technical expertise, grow in a collaborative environment, and take on greater responsibilities that support both personal and organizational success.
-          </p>
-        </div>
-
-         <div class="mb-4">
-          <h5 class="fw-bold">ℹ️ More details about me</h5>
-          <p>
-            I am 25 years old, currently living in Quezon City. I graduated a Bachelors Degree in Information Technology from Quezon City University year 2018-2022.
-          </p>
-        </div>
-
-        <!-- Experience Summary -->
-        <div class="mb-4">
-          <h5 class="fw-bold">💼 Professional Experience</h5>
-          <p><strong>iRipple, Inc (February 2024 - July 2025):</strong> Delivered and enhanced enterprise-level software solutions such as POS, merchandise management, and customer loyalty systems using C#, VB6, SQL, RESTful APIs, and AWS Chilkat. Managed multiple projects, collaborated with QA and cross-functional teams, interpreted FSDs, and supported on-site deployments — all while practicing Agile methodologies and using GitLab for version control.</p>
-
-          <p><strong>Seiko IT Solutions PH (January 2023 - February 2024):</strong> Led the development of scalable web applications using C# (MVC), MySQL, and SQL Server. As Lead Software Engineer, handled Price Management, Payroll, Engineering, and MRP systems. Oversaw client requirements, documentation, and deployments. Used SVN for version control and managed both frontend/backend tasks in multiple projects.</p>
-        </div>
-
-         <div class="mb-4">
-          <h5 class="fw-bold">What is your edge?</h5>
-          <p>
-            I have a solid foundation in programming and a proven track record of consistently delivering quality results. 
-            I’ve successfully led and deployed multiple end-to-end projects — from development to production — tailored to meet client needs. 
-            My edge lies in my technical expertise, strategic problem-solving, and eagerness to continuously learn and adapt to new technologies, 
-            which allows me to work efficiently and proactively in fast-paced environments.
-          </p>
-        </div>
-    </div>
-
-        <!-- AI Thoughts -->
-        <!-- <div>
-          <h5 class="fw-bold">🤖 My Thoughts on AI Development</h5>
-          <p>
-            AI has been a game-changer in my growth as a developer. It helps improve problem-solving, optimize code quality, and adapt to fast-paced development environments. With AI, I’ve been able to upskill rapidly, take on more responsibilities, and focus on writing clean, maintainable, and efficient code while reducing repetitive tasks.
-          </p>
-        </div>
-      </div> -->
-
-      <!-- Right Side: Photo -->
-      <div class="col-md-4 text-center">
-        <img src="GRADPIC.jpg" alt="Julianne Santiago" class="img-fluid rounded shadow" style="max-height: 550px;">
-      </div>
-
-      <div class="text-center mt-4">
-        <a href="https://drive.google.com/file/d/18g23faTOXskabFJDzTJc2Vb3IZr9wjUw/view?usp=sharing" 
-            class="btn btn-outline-primary btn-lg" 
-            target="_blank" 
-            rel="noopener noreferrer">
-            📄 Download My CV
+    <div class="row align-items-center flex-column-reverse flex-md-row">
+      
+      <!-- Left Side: Text Content -->
+      <div class="col-md-7 text-center text-md-start">
+        <h2 class="fw-bold mb-2">Hi, I'm Julianne</h2>
+        <h5 class="text-muted mb-3">Software Developer | Software Engineer</h5>
+        <p class="mb-4">
+          I’m a passionate and results-driven developer with a strong foundation in programming and real-world experience delivering quality software solutions. 
+          I thrive in dynamic environments, always eager to learn and innovate to meet business needs.
+          <br><br>
+          I develop efficient, scalable solutions from the ground up—whether it’s a custom or centralized system. I bring strong problem-solving skills and a passion for staying up-to-date with the latest technologies. I take the lead, deliver results, and adapt quickly.
+        </p> 
+        <!-- CV Button -->
+        <a href="https://drive.google.com/file/d/1FwjQV26GyHRFXfPkeUGfs3WxwFKzcoNT/view?usp=sharing" 
+          class="btn btn-danger custom-cv-btn btn-lg px-4 shadow-sm" 
+          target="_blank">
+          📄 Download My Resume
         </a>
+
       </div>
 
+      <!-- Right Side: Profile Image -->
+      <div class="col-md-5 text-center mb-4 mb-md-0">
+        <div class="position-relative d-inline-block rounded-circle shadow"
+            style="background-color: #ee5253; width: 400px; height: 400px; display: flex; align-items: center; justify-content: center;">
+          <img src="GRADPIC1.png" 
+              alt="Julianne Santiago" 
+              class="img-fluid rounded-circle" 
+              style="width: 300px; height: 400px; object-fit: cover;">
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- Chat Toggle Button -->
-<button class="btn btn-primary" onclick="toggleAIChat()">💬 Chat with AI</button>
-
-<!-- Chat Container -->
-<div id="ai-chat" class="ai-chat-box" style="display:none;">
-  <div class="ai-chat-header">
-    🤖 JTS's Mini Chat Bot
-    <span class="ai-close" onclick="toggleAIChat()">×</span>
-  </div>
-  <div class="ai-chat-body" id="chat-body">
-    <div class="ai-message ai-bot">Hi I am JTS's Mini Chat Bot! Ask me about my tech stack, projects, or contact info.</div>
-  </div>
-  <div class="ai-chat-footer">
-    <input type="text" id="user-input" class="form-control" placeholder="Type a message..." onkeypress="handleEnter(event)">
-    <button class="btn btn-success mt-2" onclick="sendMessage()">Send</button>
-  </div>
-</div>
 
 <!-- Footer -->
-<footer class="text-white pt-4 pb-2" style="background: linear-gradient(135deg, #6C63FF, #4E9AF1);">
+<footer class="text-white pt-4 pb-2" style="background: linear-gradient(135deg, #b33939, #ee5253);">
   <div class="container text-center">
     <h5 class="mb-3">Let's Connect!</h5>
 
     <div class="mb-3">
       <a href="https://www.linkedin.com/in/juliannetheresesantiago/" class="text-white me-3" target="_blank"><i class="bi bi-linkedin" style="font-size: 1.5rem;"></i></a>
       <a href="mailto:santiagochina30@gmail.com" class="text-white me-3"><i class="bi bi-envelope" style="font-size: 1.5rem;"></i></a>
-      <a href="#" class="text-white me-3"><i class="bi bi-facebook" style="font-size: 1.5rem;"></i></a>
+      <a href="https://github.com/ccinamon" class="text-white me-3"><i class="bi bi-github" style="font-size: 1.5rem;"></i></a>
     </div>
 
     <p class="mb-0">&copy; 2025 Julianne Therese G. Santiago | All Rights Reserved.</p>
