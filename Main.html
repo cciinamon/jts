@@ -192,6 +192,50 @@
   .flip-card-back ul {
     padding-left: 20px;
   }
+
+  .roadmap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.roadmap::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #0d6efd; /* Bootstrap primary blue */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.roadmap-item {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 30px 0;
+  width: 70%;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.roadmap-item img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.roadmap-item:nth-child(odd) {
+  align-self: flex-start;
+}
+
+.roadmap-item:nth-child(even) {
+  align-self: flex-end;
+}
+
   </style>
 </head>
 <body>
@@ -209,6 +253,7 @@
           <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#personalprojects">Personal Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="#hire-me">Hire Me!</a></li>
         </ul>
       </div>
@@ -681,6 +726,93 @@
     </div>
   </div>
 </section>
+
+<!-- Personal Projects Section -->
+<section id="personalprojects" class="projects py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="mb-4 fw-bold">Personal Projects that I built</h2>
+    <p class="mb-5 text-muted">NOTIF-i is a personal task management app designed to help users organize their tasks, set reminders, and receive notifications to stay on track.</p>
+    <!-- <br> -->
+      <small class="text-secondary">Built with C# WinForms and powered by MS SQL Server for database management.</small>
+    <div class="roadmap">
+      
+      <!-- Step 1: Login -->
+      <div class="roadmap-item">
+        <img src="personalproject/login.PNG" alt="Login Page" class="img-fluid rounded shadow">
+        <h5 class="mt-3 fw-bold">Login Form</h5>
+        <p class="text-muted">Secure login system with validation and user authentication.</p>
+      </div>
+
+      <!-- Step 2: Signup -->
+      <div class="roadmap-item">
+        <img src="personalproject/signup.PNG" alt="Signup Page" class="img-fluid rounded shadow">
+        <h5 class="mt-3 fw-bold">Signup Form</h5>
+        <p class="text-muted">Registration form with validation and database integration.</p>
+      </div>
+
+      <!-- Step 3: Main Form -->
+      <div class="roadmap-item">
+        <img src="personalproject/mainform.PNG" alt="Main Form" class="img-fluid rounded shadow">
+        <h5 class="mt-3 fw-bold">Main Form</h5>
+        <p class="text-muted">The central dashboard for managing tasks and features.</p>
+      </div>
+
+      <!-- Step 3: Notify Form -->
+      <div class="roadmap-item">
+        <img src="personalproject/notification.png" alt="Main Form" class="img-fluid rounded shadow">
+        <h5 class="mt-3 fw-bold">Notify the User</h5>
+        <p class="text-muted">Provides reminders and notifications to alert users about their tasks.</p>
+      </div>
+
+      <!-- Step 4: Add task Form -->
+      <div class="roadmap-item">
+        <img src="personalproject/addtodo.PNG" alt="Add To-do Form" class="img-fluid rounded shadow">
+        <h5 class="mt-3 fw-bold">Add To-Do Form</h5>
+        <p class="text-muted">Create and register tasks to keep track of your to-do list.</p>
+      </div>
+
+      <!-- Step 4: Add task Form -->
+      <div class="roadmap-item">
+        <img src="personalproject/edittodo.PNG" alt="Update To-do Form" class="img-fluid rounded shadow">
+        <h5 class="mt-3 fw-bold">Update To-Do Form</h5>
+        <p class="text-muted">Modify or edit existing tasks to stay organized and up to date.</p>
+      </div>
+
+      <!-- Step 4: Add task Form -->
+      <div class="roadmap-item">
+        <img src="personalproject/systemsettings.PNG" alt="Update To-do Form" class="img-fluid rounded shadow">
+        <h5 class="mt-3 fw-bold">System Settings Form</h5>
+        <p class="text-muted">Customize system preferences and settings to match user needs.</p>
+      </div>
+
+      <!-- Step 4: Add task Form -->
+      <div class="roadmap-item">
+        <img src="personalproject/todolist.PNG" alt="Update To-do Form" class="img-fluid rounded shadow">
+        <h5 class="mt-3 fw-bold">To-Do List Form</h5>
+        <p class="text-muted">View, track, and summarize all your to-do tasks in one place.</p>
+      </div>
+
+      <!-- Step 4: Add task Form -->
+      <div class="roadmap-item">
+        <img src="personalproject/todolist.PNG" alt="Update To-do Form" class="img-fluid rounded shadow">
+        <h5 class="mt-3 fw-bold">To-Do List Form</h5>
+        <p class="text-muted">View, track, and summarize all your to-do tasks in one place.</p>
+      </div>
+
+      <!-- Step 4: Add task Form -->
+      <div class="roadmap-item">
+        <img src="personalproject/work in progress 1.png" alt="Update To-do Form" class="img-fluid rounded shadow">
+        <h5 class="mt-3 fw-bold">This project is still in progress, with more features and customizations coming soon.</h5>
+        <p class="text-muted">
+          The application is open source — you can check it out and download it on my GitHub: 
+          <a href="https://github.com/cciinamon/NOTIFi" target="_blank">NOTIFi on GitHub</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
 <!-- Hire Me Section -->
 <section id="hire-me" class="py-5" style="background: linear-gradient(to bottom right, #f0f4ff, #ede9fe); border-radius: 30px;">
